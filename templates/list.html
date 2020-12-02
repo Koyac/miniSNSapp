@@ -4,13 +4,10 @@
 {% endblock customcss %}
 
 {% block header %}
-<<<<<<< HEAD
 <div class="alert alert-primary" role="alert" style='padding:30px'>
     <center>社内SNS</center>
-=======
 <div class="alert alert-primary" role="alert">
     社内SNS
->>>>>>> origin/master
 </div>
 {% endblock header %}
 
@@ -19,11 +16,8 @@
     {% for item in object_list %}
     <div class="alert alert-success" role="alert">
         <p>タイトル：<a href="{% url 'detail' item.pk %}">{{item.title}}</a></p>
-<<<<<<< HEAD
         <p>投稿者：{{item.author}}</p>
-=======
         <p>投稿者：{{object.author}}</p>
->>>>>>> origin/master
         <p><img src="{{object.images.url}}"></p>
         <a href="#" class="btn btn-primary" role="button" aria-pressed="true">いいね：{{item.good}}</a>
         <a href="#" class="btn btn-secondary" role="button" aria-pressed="true">既読：{{item.read}}</a>
