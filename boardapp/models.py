@@ -11,3 +11,4 @@ class BoardModel(models.Model):
     good = models.IntegerField(null=True, blank=True, default=0)
     read = models.IntegerField(null=True, blank=True, default=0)
     readtext = models.CharField(max_length=200, null=True,blank=True,default='a')
+    
