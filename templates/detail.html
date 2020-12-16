@@ -13,7 +13,6 @@
 <div class="container">
     <div class="alert alert-success" role="alert">
         <p>タイトル：{{object.title}}</p>
-<<<<<<< HEAD
         <p>投稿者：{{object.author}}</p>
         <p>内容：{{object.content}}</p>
         <p><img src='{{object.images.url}}' width=300></p>
@@ -28,7 +27,6 @@
     </label>
 </div>
 </center>
-=======
         <p>投稿者：{{item.author}}</p>
         <p>内容：{{object.content}}</p>
         <p><img src='{{object.images.url}}' width=300></p>
@@ -36,5 +34,4 @@
         <a href="{% url 'read' object.pk %}" class="btn btn-secondary" role="button" aria-pressed="true">既読にする</a>
     </div>
 </div>
->>>>>>> origin/master
 {% endblock content %}
